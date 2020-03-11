@@ -1,5 +1,5 @@
 /*
- Lop nay duoc viet ra der kiem thu MyException
+Lớp này được viêt ra để kiểm tra MyException
  */
 package demo;
 
@@ -12,17 +12,17 @@ public class TestMyException {
         Scanner in = new Scanner(System.in);
         while (true) {
             try {
-                System.out.println("Nhap vao mot so >0:");
+                System.out.println("Nhập vào một số >0:");
                 int n = Integer.parseInt(in.nextLine().trim());
                 if (n <= 0) {
 
-                    throw new MyException("Nhap sai roi: nhap so phai >0");
+                    throw new MyException("Nhập sai rồi: nhập số phải >0");
                 }
                 break;
             } catch (MyException e) {
-                System.out.println("Loi:" + e.getMessage());
+                System.out.println("Lỗi:" + e.getMessage());
             }
-        }// ket thuc while
+        }// kết thúc while
         System.out.println("Finish!!");
     }
     
