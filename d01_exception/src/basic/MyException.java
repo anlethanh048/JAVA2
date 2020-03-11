@@ -1,16 +1,16 @@
 /*
- Day laf lop thong bao loi sai nhap du lieu cua ung dung
- Vi la lop thong bao loi nen la lop con cua lop Exception
+ Đây là lớp thông báo nhập lỗi sai của ứng dụng
+Vì là lớp thông báo lỗi nên là lớp con của Exception
  */
 package basic;
 
 
 public class MyException extends Exception{
-    //ham dung khong tham so
+    //Hàm dựng không tham số
     public MyException(){
-        super("loi sai nhap du lieu !!!");
+        super("lỗi sai nhập dữ liệu !!!");
     }
-    // Thong bao loi cu the
+    // Thông báo lỗi cụ thể
     public MyException(String tb){
         super(tb);
     }
