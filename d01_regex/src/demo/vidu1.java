@@ -11,7 +11,7 @@ import java.util.regex.*;
 public class vidu1 {
 
   public static void main(String[] args) {
-        //1. tao mau qui luat(qui tac) cho chuoi ho ten hop le
+        //1. Tạo mẫu quy tắc cho chuổi họ tên hợp lệ
         java.util.regex.Pattern p = Pattern.compile("[a-zA-Z ]{1,30}");
         //2. tao doi tuong de thuc hien tinh nang kiem tra luat p voi chuoi vb bat ky
         java.util.regex.Matcher m = null;
