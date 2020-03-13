@@ -16,7 +16,7 @@ public class Vidu3 {
         String manv=null;
         String chucvu =null;
         
-        //1. kiem tra ma so nhan vien
+        //1. Kiểm tra mã nhân viên
         Pattern p = Pattern.compile("[NQ]\\d{5}");  // \\d <=> [0-9]
         Matcher m = null;
         while(true){
@@ -27,10 +27,10 @@ public class Vidu3 {
             if(m.matches()){
                 break;
             }
-            System.out.println("Ma Nhan Vien KO HOP LE. Phai bat dau 'N' hoa 'Q', sau do la 5 ky so");
-        }//ket thuc vong lap WHILE 
+            System.out.println("Mã Nhân Viên Không Hợp Lệ. Phải bắt đầu 'N' hoặc 'Q', sau đó là 5 ky số");
+        }//Kết thúc vòng lặp WHILE 
         
-        //2. kiem tra chuc vu hop le 
+        //2. kiểm tra chức vụ hợp lệ
         p = Pattern.compile("(NV|QL|GD)", Pattern.CASE_INSENSITIVE);
         m = null;
         while(true){
