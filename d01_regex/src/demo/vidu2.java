@@ -1,7 +1,7 @@
 /*
- vi du bieu thuc chinh quy
- Kiem tra sdt hop le khong
- sdt hop le: chứa các ký số hoặc khoảng trắng, it nhất 3 số
+ Ví dụ biểu thức chính quy
+ Kiểm tra số điện thoại hợp lệ hay không
+ SDT hợp lệ: chứa các ký số hoặc khoảng trắng, it nhất 3 số
  */
 package demo;
 
@@ -22,12 +22,12 @@ public class vidu2 {
             System.out.print("Nhap Số điện thoại: ");
             sdt = sc.nextLine().trim();
 
-            //3. khoi tao doi tuong matcher m, 
-            //   de tien hanh viec kiem tra so khop "p" voi "sdt"
+            //3. Khởi tạo đối tượng matcher m, 
+            //   Để tiến hành kiểm tra số khớp p "p" với "sdt"
             m = p.matcher(sdt);
 
             //4. kiem tra
-            if (m.matches()) {
+            if (m.find()) {
                 System.out.println("SDT nhap hop le");
                 break;
             }
