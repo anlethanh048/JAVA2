@@ -115,7 +115,7 @@ public class Customer {
            
              }   
     public String standradlizeAddress(){
-        return address.replaceAll("Q.|q.", "Quận ");
+        return address.replaceAll("Q.|q.","Quận ");
     }
 
     @Override
