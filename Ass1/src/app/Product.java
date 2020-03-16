@@ -87,7 +87,7 @@ public class Product {
         while (true) {
             try {
                 System.out.println("Nhập mfg:");
-                mfg = in.nextLine().trim();
+                mfg = in.nextLine().trim().toUpperCase();
                 m = p.matcher(mfg);
                 if (m.find()) {
                     break;
@@ -102,7 +102,7 @@ public class Product {
 
     public String standardlizeMFG() {
         if ("US".equals(mfg)) {
-            return mfg.replaceAll("VN", "My");
+            return mfg.replaceAll("US", "My");
         }
         if ("VN".equals(mfg)) {
             return mfg.replaceAll("VN", "Vietnam");
@@ -110,7 +110,7 @@ public class Product {
         if ("TL".equals(mfg)) {
             return mfg.replaceAll("TL", "ThaiLand");
         }
-        return null;
+        return mfg;
 
     }
 
