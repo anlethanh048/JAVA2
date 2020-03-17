@@ -49,17 +49,17 @@ public class ArrayListDemoIOText {
         }
     } 
     
-    //ham ghi ds vo 1 tap tin van ban, "nhanvien.txt"
+    //Hàm ghi ds vô một tâp tin văn bản, "nhanvien.txt"
     String fname = "nhanvien.txt";
     public void saveFileText(){
         try {
-            //1. mo luong output, ket voi tap tin co ten "nhanvien.txt"
+            //1. Mở luồng output, Kết nối với tập tin có tên "nhanvien.txt"
             PrintStream ps = new PrintStream(fname);
             
-            //2. doc het du lieu trong list ds, ghi vo file 
+            //2. Đọc hết dữ liệu trong list ds, ghi vô file 
             ds.forEach(s -> ps.println(s));
 
-            //3. dong luong output (quan trong lam nha)
+            //3. đóng luồng output (quan trong lam nha)
             ps.close();
             
         } catch (FileNotFoundException ex) {
@@ -67,7 +67,7 @@ public class ArrayListDemoIOText {
         }   
     }
     
-    //ham doc tap tin van ban, "nhanvien.txt", phan tich du lieu va dua vo ds
+    //hàm đọc tập tin văn bản, "nhanvien.txt", Phân tich dữ liệu đua vô ds
     public void readFileText(){
         //kiem tra xem tap tin "nhanvien.txt" co chua ?
         File f = new File(fname);
